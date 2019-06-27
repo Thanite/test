@@ -19,11 +19,11 @@ $faker = \Faker\Factory::create();
 
 $template = new Template(
     1,
-    'Votre voyage avec une agence locale [quote:destination_name]',
+    'Votre voyage avec une agence locale [quote:destinationName]',
     "
-Bonjour [user:first_name],
+Bonjour [user:firstName],
 
-Merci d'avoir contacté un agent local pour votre voyage [quote:destination_name].
+Merci d'avoir contacté un agent local pour votre voyage [quote:destinationName].
 
 Bien cordialement,
 
