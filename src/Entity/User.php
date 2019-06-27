@@ -14,4 +14,14 @@ class User
         $this->lastname = $lastname;
         $this->email = $email;
     }
+
+    public function firstName()
+    {
+        return $this->firstname;
+    }
+
+    public function lastName()
+    {
+        return $this->lastname;
+    }
 }

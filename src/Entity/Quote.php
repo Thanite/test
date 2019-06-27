@@ -24,4 +24,30 @@ class Quote
     {
         return (string) $quote->id;
     }
+
+    public function destinationLink()
+    {
+        $siteRepository = new SiteRepository();
+        return $siteRepository->getById(
+            $this->siteId
+        )->url;
+    }
+
+    public function destinationName()
+    {
+        $destinationRepository = new destinationRepository();
+        return $destinationRepository->getById(
+            $this->destinationId
+        )->countryName;
+    }
+
+    public function summary($id)
+    {
+        return Quote::renderText($this->getById($this->id));
+    }
+
+    public function summaryHtml($id)
+    {
+        return Quote::renderText($this->getById($this->id));
+    }
 }
